@@ -40,8 +40,8 @@ super(frameText);
   
 int tempX=TOPX, y=TOPY;  
 displayLabel.setBounds(tempX,y,240,HEIGHT);  
-displayLabel.setBackground(Color.BLUE);  
-displayLabel.setForeground(Color.WHITE);  
+displayLabel.setBackground(Color.PINK);  
+displayLabel.setForeground(Color.GRAY);  
 add(displayLabel);  
   
 memLabel.setBounds(TOPX,  TOPY+HEIGHT+ V_SPACE,WIDTH, HEIGHT);  
@@ -53,7 +53,7 @@ y=TOPY+2*(HEIGHT+V_SPACE);
 for(int i=0; i<memoryButton.length; i++)  
 {  
 memoryButton[i]=new MyMemoryButton(tempX,y,WIDTH,HEIGHT,memoryButtonText[i], this);  
-memoryButton[i].setForeground(Color.RED);  
+memoryButton[i].setForeground(Color.BLUE);  
 y+=HEIGHT+V_SPACE;  
 }  
   
@@ -73,7 +73,7 @@ tempX=digitX;  y=digitY;
 for(int i=0;i<digitButton.length;i++)  
 {  
 digitButton[i]=new MyDigitButton(tempX,y,WIDTH,HEIGHT,digitButtonText[i], this);  
-digitButton[i].setForeground(Color.BLUE);  
+digitButton[i].setForeground(Color.BLACK);  
 tempX+=WIDTH+H_SPACE;  
 if((i+1)%3==0){tempX=digitX; y+=HEIGHT+V_SPACE;}  
 }  
